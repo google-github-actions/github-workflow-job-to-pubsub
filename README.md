@@ -73,8 +73,7 @@ and manage the proxy.
 
     ```sh
     gcloud pubsub topics create "gh-topic" \
-      --project="${PROJECT_ID}" \
-      --message-encoding="JSON"
+      --project="${PROJECT_ID}"
     ```
 
 1.  Grant the service account permissions to publish to the topic:
@@ -89,10 +88,10 @@ and manage the proxy.
 1.  Create a Pub/Sub subscription:
 
     ```sh
-    gcloud pubsub topics create "gh-subscription" \
+    gcloud pubsub subscriptions create "gh-subscription" \
       --project="${PROJECT_ID}" \
       --topic="gh-topic" \
-      --ack-deadline="10s" \
+      --ack-deadline="10" \
       --message-retention-duration="1800s" \
       --expiration-period="never" \
       --min-retry-delay="5s" \
