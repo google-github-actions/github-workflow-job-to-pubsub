@@ -13,6 +13,11 @@ Pub/Sub topic corresponds to the number of queued or active GitHub Actions jobs.
 You can use this property as an indicator in an auto-scaling metric or a means
 to queue new ephemeral workers.
 
+**This is not an officially supported Google product, and it is not covered by a
+Google Cloud support contract. To report bugs or request features in a Google
+Cloud product, please contact [Google Cloud
+support](https://cloud.google.com/support).**
+
 
 ## Deployment
 
